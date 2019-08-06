@@ -8,6 +8,7 @@ const app = express()
     // app.get('',(req, res)=>{ //request, response
     //     res.send('hello express')
     // })
+const port = process.env.PORT || 3000
 
 // define path for Express config
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -103,8 +104,8 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-        console.log('server is up on port 3000')
+app.listen(port, () => {
+        console.log('server is up on port ' + port)
     }) //development prot
 
 console.log(__dirname)
