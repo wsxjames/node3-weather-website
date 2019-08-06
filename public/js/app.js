@@ -7,7 +7,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 
-// duic
+
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log(search.value)
@@ -18,8 +18,8 @@ weatherForm.addEventListener('submit', (e) => {
                 console.log("error")
                 messageTwo.textContent = 'error'
             } else {
-                console.log(data.location)
-                console.log(data.forecast)
+                // console.log(data.location)
+                // console.log(data.forecast)
                 messageOne.textContent = "The weather forecast for " + data.location + " is: " + data.forecast
             }
         })
