@@ -7,7 +7,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 
-
+// duic
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log(search.value)
